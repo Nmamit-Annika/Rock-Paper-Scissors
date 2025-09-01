@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+button.choice {
+  padding: 15px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button.choice:hover {
+  transform: scale(1.1);
+}
+
+#rock { background: #ff7675; color: white; }
+#paper { background: #74b9ff; color: white; }
+#scissors { background: #55efc4; color: white; }
+
+.message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.timer {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #444;
+}
+
+#reset {
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background: #5548c8;
+}
